@@ -1,0 +1,24 @@
+
+<div class="card lg:card-side", style="width: 800px;" >
+  <figure><img src="https://images.unsplash.com/photo-1552857131-0afaed1953f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTExfHxsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Album"/></figure>
+  <div class="card-body">
+  <div id="<%= dom_id laptop %>">
+    <h1 align="center"><strong><%= laptop.name %></strong></h1>
+    <br>
+    <div class="container">
+      <h6><p><strong>Category: </strong><%= laptop.category %></p></h6> 
+      <br>
+      <p> <strong>Price:</strong> <%= laptop.price %></p> 
+      <br>
+    </div>
+    <div class="container">
+      <p><strong>ISBN: </strong> <%= laptop.isbn %></p>
+    </div>
+  </div>
+  <br>
+    <%= link_to "Show this laptop", laptop , class: "btn btn-info"%>    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>

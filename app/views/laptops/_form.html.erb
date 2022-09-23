@@ -1,0 +1,46 @@
+<%= form_with(model: laptop) do |form| %>
+  <% if laptop.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(laptop.errors.count, "error") %> prohibited this laptop from being saved:</h2>
+
+      <ul>
+        <% laptop.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <%= link_to "Back to laptops", laptops_path, class: "btn btn-ghost", style: "margin-left: 1350px; margin-top: 50px; background-color: #9ea8ad" %>
+
+<div class="card lg:card-side", style="width: 800px;" >
+<figure><img src="https://images.unsplash.com/photo-1552857131-0afaed1953f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTExfHxsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Album"/></figure>
+  <div class="card-body">
+  <div id="<%= dom_id laptop %>">
+    <h1 align="center"><strong>New Laptop</strong></h1>
+    <br>
+    <div class="container">
+      <%= form.label :name, class: "display: block" %>
+      <%= form.text_field :name, class: "input input-bordered input-info w-full max-w-xs" %>
+    <br>
+      <%= form.label :category, style: "display: block" %>
+      <%= form.text_field :category, class: "input input-bordered input-info w-full max-w-xs" %>
+    <br>
+      <%= form.label :price, style: "display: block" %>
+      <%= form.text_field :price, class: "input input-bordered input-info w-full max-w-xs" %>
+    <br>
+    </div>
+    <div class="container">
+      <%= form.label :isbn, style: "display: block" %>
+      <%= form.number_field :isbn, class: "input input-bordered input-info w-full max-w-xs" %>
+    </div>
+  </div>
+  <br>
+    <%= form.submit class: "btn btn-primary", class: "btn btn-ghost", style: "background-color: #5fc0f0" %>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<% end %>

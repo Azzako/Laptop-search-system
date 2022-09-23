@@ -1,0 +1,37 @@
+<div>
+<p style="color: green"><%= notice %></p>
+
+<%= stylesheet_link_tag "laptop" %>
+
+<br>
+<%= search_form_for @q do |f| %>
+
+<div class="input-group azyt mb-4">
+  <div>
+    <%= f.search_field :name_cont,class: 'form-control' %>
+  </div>
+    <%= f.submit  class: "btn btn-primary", style: "background-color: #0d6efda8; margin-top: -5px; color: black"%>
+  </div>
+
+ <% end %>
+
+  <h1 class="text-5xl font-bold">Laptops</h1>
+  <%= link_to "New laptop", new_laptop_path, class: "btn btn-success", style: "margin-left: 1350px; margin-top: -60px" %>
+
+<br>
+
+<div id="laptops">
+
+  <% @laptops.each do |laptop| %>
+    <%= render laptop %>
+    <br>
+    <hr>
+    <br>
+  <% end %>
+  </div>
+</div>
+<div class="btn-group">
+   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+</div>
+</div>
+</div>
