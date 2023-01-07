@@ -10,7 +10,7 @@ class LaptopsController < ApplicationController
   # GET /laptops/1 or /laptops/1.json
   def show
   end
-
+ 
   # GET /laptops/new
   def new
     @laptop = Laptop.new
