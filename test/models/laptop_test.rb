@@ -5,3 +5,4 @@ class LaptopTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+ 
