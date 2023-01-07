@@ -5,3 +5,4 @@ class SearchTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+ 
