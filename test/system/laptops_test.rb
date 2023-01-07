@@ -13,7 +13,7 @@ class LaptopsTest < ApplicationSystemTestCase
   test "should create laptop" do
     visit laptops_url
     click_on "New laptop"
-
+ 
     fill_in "Category", with: @laptop.category
     fill_in "Isbn", with: @laptop.isbn
     fill_in "Name", with: @laptop.name
