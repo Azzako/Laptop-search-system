@@ -9,7 +9,7 @@ class LaptopsControllerTest < ActionDispatch::IntegrationTest
     get laptops_url
     assert_response :success
   end
-
+ 
   test "should get new" do
     get new_laptop_url
     assert_response :success
