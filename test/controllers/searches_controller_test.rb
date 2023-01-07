@@ -5,3 +5,4 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
 end
+ 
