@@ -8,3 +8,4 @@ class Laptop < ApplicationRecord
         end
     end
 end
+ 
